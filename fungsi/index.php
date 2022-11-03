@@ -28,6 +28,8 @@ function temen($temen_gweh, $umur){
 sapa_teman();
 temen("riski","13");
 
+// tambah komen
+
 //mencoba membuat fungsi menggunakan percabangan
 function kasir($nama,$jumlah){
     echo "<h1>hai {$nama}, makasih loh</h1>";
