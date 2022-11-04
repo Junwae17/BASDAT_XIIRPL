@@ -14,7 +14,7 @@ $c = ['satu','lembar','harganya','2000'];
 
 $kata_1 = count($a);
 $kata_2 = count($b);
-$kata_3= count($c);
+$kata_3 = count($c);
 
 var_dump($kata_1);
 echo "<br />";
