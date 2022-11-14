@@ -1,0 +1,117 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(218, 0, 218);
+}
+
+.warpper .box-1{
+    background-color: rgb(94, 0, 148);
+    width: 100%;
+    height: 50%;
+    margin-top: -30px;
+}
+
+.warpper .box-2 .img{
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    margin-left: -300;
+    background-image: url(07d1fb60c4cf581d021a5710b65e21db.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.warpper .box-2{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(255, 185, 255);
+    margin: -150px auto;
+    text-align: center;
+    border-top: 8px solid purple;
+    border-right: 8px solid rgb(90, 0, 90);
+    border-bottom: 8px solid rgb(66, 0, 66);
+    border-left: 8px solid rgb(46, 0, 46);
+}
+
+.warpper .text{
+    width: 250px;
+    height: 270px;
+    margin: 8px 655px;
+    margin-top: -250px;
+}
+
+.warpper .text h3{
+    color: rgb(100, 0, 100);
+    font-size: x-large;
+}
+.warpper .text h4{
+    margin-top: 5px;
+    color: rgb(51, 0, 51);
+    font-size: small;
+}
+
+.warpper .text h5{
+    color: rgb(51, 0, 51);
+    font-size: medium;
+}
+
+.warpper .text h6{
+    color: rgb(51, 0, 51);
+    font-size: small;
+    font-style: italic;
+}
+
+.warpper .text h2{
+    background-color: purple;
+    margin-left: -30px;
+    margin-right: 20px;
+    margin-top: 5px;
+    height: 2px;
+}
+
+.warpper .text2 h1{
+text-align: center;
+color: rgb(51, 0, 51);
+margin-bottom: 30px;
+}
+
+.warpper .box-3{
+    width: 850px;
+    height: 250px;
+    background-color: rgb(255, 185, 255);
+    margin: 10px auto;
+    text-align: center;
+    border-top: 8px solid purple;
+    border-right: 8px solid rgb(90, 0, 90);
+    border-bottom: 8px solid rgb(66, 0, 66);
+    border-left: 8px solid rgb(46, 0, 46);
+}
+
+.warpper .text3{
+    color: rgb(100, 0, 100);;
+    width: 500px;
+    height: 270px;
+    margin: 8px 540px;
+    margin-top: -255px;
+    text-align: left;  
+    font-size: small;  
+}
+.warpper .text3 h3{
+    color: rgb(51, 0, 51);
+    margin-left: -225px;
+    text-align: center;  
+    font-size: medium;  
+}
+
+.warpper .text3 h2{
+    background-color: purple;
+    margin-left: -200px;
+    margin-right: 20px;
+    margin-top: 5px;
+    height: 2px;
+}
