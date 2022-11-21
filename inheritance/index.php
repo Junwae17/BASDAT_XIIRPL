@@ -1,41 +1,40 @@
 <?php
 //Pewarisan atau inheritance
 
-//Class induk
-class komputer{
+// Class induk
+class komputer
+{
+    // Property
     public $merk;
     public $prosesor;
     public $memory;
 
-    public function beli_komputer(){
-        return "beli komputer baru";
-        
+    // fungsi/operasi membuat beli komputer
+    public function beli_komputer()
+    {
+        return "Beli Komputer baru";
     }
 }
 
-//Kelas turunan / extends dari class komputer ke class laptop
-class laptop extends komputer{
-    public function lihat_spek(){
-        //ambil property dari class komputer
-        return "merk: $this->merk,
-         prosesor: $this->prosesor,
-         memory: $this->memory";
+// kelas turunan / extends dari class komputer ke class laptop
+class laptop extends komputer
+{
+    public function lihat_spek()
+    {
+        // ambil property dari class komputer
+        return "merk: $this->merk, prosesor: $this->prosesor, memory: $this->memory";
     }
 }
+//intansiasi 
+//membuat objek baru dari class laptop (kelas turunan)
+$laptop_baru = new laptop();
 
-    //instansiasi
-    //membuat objek baru dari class laptop (Kelas Turunan)
-    $laptop_baru = new laptop();
+//isi propertynya
+$laptop_baru->merk = "Asus";
+$laptop_baru->prosesor = "AMD Ryzen 9X";
+$laptop_baru->memory = "1 PetaByte";
 
-    //isi propertinya
-    $laptop_baru->merk = "Asus";
-    $laptop_baru->prosesor = "AMD Ryzen 9X";
-    $laptop_baru->memory = "1 PetaByte";
-
-    //panggil functionnya
-    echo $laptop_baru->beli_komputer();
-    echo "<br />";
-    echo $laptop_baru->lihat_spek();
-
-
-?>
+//panggil functionnya
+echo $laptop_baru->beli_komputer();
+echo "<br/>";
+echo $laptop_baru->lihat_spek();

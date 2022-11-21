@@ -1,41 +1,44 @@
 <?php
 
-//Cara mengakses class dan object
-class mobil{
+// Cara untuk mengakses class dan object
+class mobil
+{
     //property
     var $merk;
     var $roda;
     var $kecepatan;
 
-    //Membuat fungsi/operasi berjalan (maju dan mundur)
-    function jalan_maju(){
-        return "vrooooomm maju";
+    //membuat fungsi / operasi berjalan (maju dan mundur)
+    function jalan_maju()
+    {
+        return "Vrooommmm majuu";
     }
-    function jalan_mundur(){
-        return "vrooooomm ciitttttt mundur";
+    function jalan_mundur()
+    {
+        return "vrooooomm ciiittt mundur";
     }
 }
 
-//instansiasi (menginstankan variabel yang menghubungkan dari class keluar class)
-//mobil_keren itu objek
+// instansiasi (menginstankan variabel yang menghubungkan dari class keluar class)
+// $mobil_keren itu objek
 $mobil_keren = new mobil();
 
- //set property
- $mobil_keren->merk="Lamborghini";
- $mobil_keren->roda="Hitam";
- $mobil_keren->kecepatan="500Kmh";
+// set property (mengisi property dengan mengakses diluar class)
+$mobil_keren->merk = "Ferrari";
+$mobil_keren->roda = "Hitam";
+$mobil_keren->kecepatan = "300KmH";
 
- //Tampilkan propertinya
- echo $mobil_keren->merk;
- echo "<br />";
- echo $mobil_keren->roda;
- echo "<br />";
- echo $mobil_keren->kecepatan;
+//tampilkan propertinya
+echo $mobil_keren->merk;
+echo "<br />";
+echo $mobil_keren->roda;
+echo "<br />";
+echo $mobil_keren->kecepatan;
+echo "<br />";
 
- //tampilkan function
- echo "<br />";
- echo $mobil_keren->jalan_maju();
- echo "<br />"; 
- echo $mobil_keren->jalan_mundur();
+//tampilkan function
+echo $mobil_keren->jalan_maju();
+echo "<br />";
+echo $mobil_keren->jalan_mundur();
 
-?>
+

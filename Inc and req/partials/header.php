@@ -1,5 +1,5 @@
 <?php
 
-echo "<h1>Selamat Datang di SMKJP1</h1>";
+echo "<h1>Selamat Datang Di SMKJP1</h1>"
 
 ?>

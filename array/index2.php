@@ -1,36 +1,33 @@
 <?php
 
-$warnaterang = ['kuning','hijau','pink'];
-$warnagelap = ['hitam','abu','cokelat'];
+$warnaterang = ['kuning', 'hijau', 'pink'];
+$warnagelap = ['hitam', 'abu - abu', 'cokelat'];
 
-// Gabungkan 2 array menjadi 1
+// Gabungkan 2 array tersebut menjadi 1
 $warna_warna = array_merge($warnaterang, $warnagelap);
 
 // Array_merge bisa ditambahkan lebih dari 2
-$warna_warna = array_merge(
+$semua_warna = array_merge(
     $warnaterang,
     $warnagelap,
-    ['Margenta','Cyan','Hijau Kelabu']
+    ['Magenta', 'Cyan', 'Hijau Kelabu']
 );
 
-// Unpacking untuk mengekstrak array menggunakan....
-$list_buah_lokal = ['Mangga','Rambutan'];
-$list_buah = ['Kurma','Anggur',$list_buah_lokal, 'Kismis'];
+// unpacking untuk mengekstrak array menggunakan ...
+$list_buah_lokal = ['mangga', 'rambutan'];
+$list_buah = ['kurma', 'anggur', $list_buah_lokal, 'kismis'];
 
-// Kurma, Anggur, Mangga, Rambutan, Kismis
+// kurma, anggur , mangga , rambutan , kismis
 
-// Explode array berfungsi memecah belah string lalu diubah ke dalam array
 
-// Explode ada 2 parameter : delimiter (pemisah), string sasaran (Sasaran yang akan kita pecah menjadi array)
+// Explode array berfungsi memecah-belah string lalu diubah ke dalam array
 
+// Expload ada 2 paramater : delimiter(pemisah), string sasaran (sasaran yang akan kita pecah menjadi array)
 $siswa = "andi budi dono kasino indro";
-var_dump(explode(" ",$siswa));
+// var_dump(explode(" ", $siswa));
 
-// Impload fungsi mengembalikannya expload
-// impload dia 2 parameter : glue (Penggabung), array sasaran (sasaran yang akan kita gabung menjadi string)
+// Impload fungsi kebalikannya expload
+// impload dia 2 paramater : glue (penggabung), array sasaran (sasaran yang akan ita gabung menjadi string)
 
-$siswa_pintar = ['Refa', 'Agus', 'Novan'];
-$siswa_jago = implode(' ',$siswa_pintar);
-
-
-?>
+$siswa_pintar = ['refa', 'agus', 'novan']; //array
+$siswa_jago = implode(' ', $siswa_pintar); //string

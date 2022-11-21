@@ -1,7 +1,7 @@
-.box{
+.box {
     width: 100px;
     height: 50px;
-    background-color: #ff1493;
+    background-color: #FF1493;
     text-align: center;
     line-height: 50px;
     margin: 3px;
@@ -10,13 +10,12 @@
 .box2{
     width: 100px;
     height: 50px;
-    background-color: #ff2323;
+    background-color: #FF8C00;
     text-align: center;
     line-height: 50px;
     margin: 3px;
     float: left;
 }
-
 .clear{
     clear: both;
 }

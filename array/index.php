@@ -1,45 +1,43 @@
 <?php
 
 // Array adalah tipe data yang berisi beberapa tipe data (string maupun integer)
-//Keynya diawali dengan angka 0 dst.
+// keynya diawali dengan angka 0 dst
 
-// <---Array asosiatif---> \\
+//Array asosiatif 
 //Keynya berubah menjadi tipe data string
 
 $siswa = [
     // keynya bisa int/string
-    'sipalingganteng' => 'gweh',
-    'sipalingcantik' => 'binikgweh',
-    'sipalingnetral' => 'bapakgweh',
+    1 => 'arjuna',
+    'sipalingcantik' => 'nita',
+    'sipalingnetral' => 'ahmad sandi'
 ];
 
-// echo "Siapa yang paling ganteng? {$siswa['sipalingganteng']}";
+// echo "siapa yang paling ganteng? {$siswa[1]}";
 
-// <---Array Multidimention---> \\
-//ada array di dalam array
+// Array Multidimension
+// ada array di dalam array 
 
 $togel = [
-    [1, 2, 3 ,4, 5],
-    [6, 7, 8 ,9, 22],
-    [12, 15, 13, 14, 51],
-    [19, 21, 31, 47, 35]
+    [1, 2, 3, 4, 5], //0
+    [6, 7, 8, 9, 22], //1
+    [12, 15, 13, 14, 51], //2
+    [19, 21, 31, 47, 35] //3
 ];
+// cara memanggil array 
+// echo $togel[2][4];
 
-//cara memanggil array
-// echo $togel[3][2];
+// Array push
+// Array push berguna untuk menerima 2 parameter, parameter pertama : untuk target, parameter kedua untuk nilai yang akan dimasukan
 
-// <---Array Push---> \\
-// array push berguna untuk menerima 2 parameter, parameter pertama : untuk target, parameter kedua untuk nilai yang akan dimasukkan
-$sayur = ['bayem','kangkung','sawi'];
-$buah = ['pisang','kelapa','coklat'];
+$sayur = ['bayem', 'kangkung', 'sawi'];
+$buah = ['pisang', 'kelapa', 'coklat'];
 
-// Cara pertama untuk menambahkan items
-array_push($buah,'timun');
+// cara pertama untuk menambahkan item 
+array_push($buah, 'timun');
 
-// Cara kedua
+// cara yang kedua
 $sayur[] = 'labu';
 
 echo $buah[3];
 echo $sayur[3];
-
-?>
