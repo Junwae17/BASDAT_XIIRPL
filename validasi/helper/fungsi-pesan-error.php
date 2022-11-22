@@ -2,20 +2,21 @@
 
 $listPesanError = [
     'required' => function($field){
-        return "Field ($field) harus diisi";
-        // Pesan error jika tidak diisi
+        return "Field ($field) harus di isi";
+        // pesan error jika tidak di isi
     },
     'email' => function($field){
         return "Field ($field) harus berupa email yang valid";
-        // Pesan error jika isinya belum ada (@)
+        //  pesan error jika isinya blum ada a keong
     },
     'username' => function($field){
-        return "Field ($field) hanya boleh angka, huruf, dan underscore(_)";
-        // Pesan error jika isinya REGEX
+        return "Field ($field) hanya boleh angka huruf dan underscore";
+        //  pesan error jika isinya regex
     },
     'numeric' => function($field){
         return "Field ($field) harus berupa angka";
-        // Pesan error jika isinya huruf
+        //  pesan error muncul jika isinya huruf
     }
 ]
+
 ?>

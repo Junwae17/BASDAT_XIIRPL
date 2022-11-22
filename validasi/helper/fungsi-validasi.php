@@ -6,46 +6,47 @@ function validasi(array $listinput){
     // Variabel berisi inputan form 
     $request = $_REQUEST;
 
-    // Memanggil semua variabel error
+    // memanggil semua variabel error
     $errors = [];
-    
-    // Mengakses variabel $listPesanError
+
+    // mengakses variabel $listPesanError
     global $listPesanError;
 
-    // Perulangan untuk array terluar (berisi nama input)
-    foreach($listinput as $input => $listrules){
+    // perulangan untuk array terluar (berisi nama input)
+    foreach ($listinput as $input => $listrules){
         echo "Periksa Input <strong>{$input}</strong><br>";
 
-        // Menggunakan foreach untuk memanggil semua fungsi yang bernama LOLOS
+        // Menggunakan foreach untuk memanggil semua fungsi yang bernama 'lolos'
         foreach($listrules as $rules){
             $namaFungsi = 'lolos'.ucfirst($rules);
-            // Validasi sesuai input formnye
+            // validasi sesuai input formnye
             $lolos = $namaFungsi($request[$input]);
-            // Buatkeun bool (lolos atau tidak lolos)
+            //Buatkeun bool (lolos atau tidak lolos)
 
             // Jika tidak lolos maka munculkan pesan error
-            if(!$lolos){
-                if(!is_array($errors[$input])){
+            if (!$lolos){
+                if (!is_array($errors[$input])){
                     $errors += [$input => []];
                 }
-                array_push($errors[$input], $listPesanError[$rules]($input));
+                array_push($errors[$input],$listPesanError[$rules]($input));
             }
+            echo "<br>";
         }
         echo "<br>";
     }
     return $errors;
 }
 
-function lolosrequired($nilai){
+function lolosRequired($nilai){
     return(bool)$nilai;
 }
 
-// Fungsi validasi Email
+// Fungsi Validasi Email
 function lolosEmail($nilai){
-    return filter_var($nilai, FILTER_VALIDATE_EMAIL);
+    return filter_var($nilai,FILTER_VALIDATE_EMAIL);
 }
 
-// Fungsi lolos username menggunakan Regex (Regular Expretion)
+// Fungsi lolos username menggunakan regex
 function lolosUsername($nilai){
     preg_match("/^[a-zA-Z0-9_]+/", $nilai, $output);
     if(count($output)){
